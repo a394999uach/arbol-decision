@@ -1,7 +1,5 @@
 import streamlit as st
 
-import streamlit as st
-
 st.title("Clasificación del Clima - Árbol de Decisión")
 
 # 1. Capturar los valores mediante la interfaz (reemplaza las variables fijas)
