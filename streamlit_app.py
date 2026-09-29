@@ -1,6 +1,20 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+temperatura = 28
+humedad = 60
+llueve = True
+
+if temperatura >= 30:
+    if humedad >= 70:
+        clasificacion = "Calor húmedo"
+    else:
+        clasificacion = "Calor seco"
+elif temperatura >= 15:
+    if llueve:
+        clasificacion = "Templado lluvioso"
+    else:
+        clasificacion = "Templado"
+else:
+    clasificacion = "Frío"
+
+print(clasificacion)
